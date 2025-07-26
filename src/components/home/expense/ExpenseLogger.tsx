@@ -16,20 +16,34 @@ export function ExpenseLogger() {
       <div className={classNames(styles.heading, 'heading3')}>
         Quick Expense
       </div>
-      <Form action={logExpense}>
-        <div>
-          <label>
+      <Form action={logExpense} className={styles.form}>
+        <div className={styles.formGroup}>
+          <label className={styles.label}>
             Amount (₹):
-            <input type="number" name="amount" required min="0" step="0.01" />
+            <input
+              className={styles.input}
+              type="number"
+              name="amount"
+              required
+              min="0"
+              step="0.01"
+            />
           </label>
         </div>
-        <div>
-          <label>
+        <div className={styles.formGroup}>
+          <label className={styles.label}>
             Item (optional):
-            <input type="text" name="item" placeholder="Item name" />
+            <input
+              className={styles.input}
+              type="text"
+              name="item"
+              placeholder="Item name"
+            />
           </label>
         </div>
-        <button type="submit">Submit</button>
+        <button className={styles.button} type="submit">
+          Submit
+        </button>
       </Form>
     </section>
   );
