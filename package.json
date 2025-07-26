@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@csstools/postcss-global-data": "^3.0.0",
+    "classnames": "^2.5.1",
     "next": "15.4.4",
     "react": "19.1.0",
     "react-dom": "19.1.0"

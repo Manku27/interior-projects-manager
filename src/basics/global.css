@@ -1,0 +1,13 @@
+/* Define Cascade Layers */
+@layer reset, basic, component;
+
+/* Reset: @layer reset */
+/* @import '../basics/reset/reset.css'; */
+
+/* Design Tokens */
+@import-glob './styles/*.css';
+
+/* When a modal is attached to the body, lock scrolling */
+body:has(:modal) {
+  overflow: hidden;
+}
