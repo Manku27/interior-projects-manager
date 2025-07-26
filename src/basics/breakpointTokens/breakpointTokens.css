@@ -1,0 +1,11 @@
+@custom-media --x-small-max (max-width: 29.99em);
+@custom-media --small (min-width: 30em);
+@custom-media --small-to-medium (min-width: 30em) and (max-width: 47.99em);
+@custom-media --small-max (max-width: 47.99em);
+@custom-media --medium (min-width: 48em);
+@custom-media --medium-to-large (min-width: 48em) and (max-width: 63.99em);
+@custom-media --medium-max (max-width: 63.99em);
+@custom-media --large (min-width: 64em);
+@custom-media --large-to-x-large (min-width: 64em) and (max-width: 79.99em);
+@custom-media --large-max (max-width: 79.99em);
+@custom-media --x-large (min-width: 80em);
