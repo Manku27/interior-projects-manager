@@ -1,0 +1,8 @@
+:root {
+  --anim-duration-fast: 0.2s;
+  --anim-duration-medium: 0.4s;
+  --anim-duration-slow: 1s;
+
+  --anim-ease-linear: linear;
+  --anim-ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+}

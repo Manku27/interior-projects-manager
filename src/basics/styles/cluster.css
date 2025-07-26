@@ -1,0 +1,68 @@
+@layer basic {
+  .cluster,
+  .clusterFlush,
+  .clusterExtraTight,
+  .clusterTight,
+  .clusterLoose,
+  .clusterExtraLoose,
+  .clusterUniform,
+  .clusterCenter,
+  .clusterSpread,
+  .clusterEnd,
+  .clusterNoWrap {
+    --gap: var(--spacing-horizontal);
+    --distribution: flex-start;
+    --alignment: center;
+    --wrap: wrap;
+
+    display: flex;
+    flex-wrap: var(--wrap);
+    gap: var(--gap);
+    align-items: var(--alignment);
+    justify-content: var(--distribution);
+
+    & > .collapseWhenEmpty:empty {
+      position: absolute;
+    }
+  }
+
+  .clusterFlush {
+    --gap: 0;
+  }
+
+  .clusterExtraTight {
+    --gap: var(--spacing-horizontal-x-small);
+  }
+
+  .clusterTight {
+    --gap: var(--spacing-horizontal-small);
+  }
+
+  .clusterLoose {
+    --gap: var(--spacing-horizontal-large);
+  }
+
+  .clusterExtraLoose {
+    --gap: var(--spacing-horizontal-x-large);
+  }
+
+  .clusterUniform {
+    --alignment: stretch;
+  }
+
+  .clusterCenter {
+    --distribution: center;
+  }
+
+  .clusterSpread {
+    --distribution: space-between;
+  }
+
+  .clusterEnd {
+    --distribution: flex-end;
+  }
+
+  .clusterNoWrap {
+    --wrap: nowrap;
+  }
+}

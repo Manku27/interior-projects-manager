@@ -1,0 +1,27 @@
+@layer basic {
+  a {
+    --color: var(--color-sky);
+    --color-hover: var(--color-dark-sea);
+    --color-focus: var(--color-hover);
+    --text-decoration: underline;
+
+    color: var(--color);
+    text-decoration: var(--text-decoration);
+    text-underline-position: under;
+    cursor: pointer;
+
+    &:focus {
+      color: var(--color-focus);
+    }
+
+    &:hover {
+      color: var(--color-hover);
+      text-decoration: var(--text-decoration-hover);
+    }
+  }
+
+  .bareLink {
+    --text-decoration: none;
+    --text-decoration-hover: none;
+  }
+}

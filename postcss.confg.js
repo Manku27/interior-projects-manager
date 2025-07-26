@@ -1,7 +1,7 @@
 module.exports = {
   plugins: {
     '@csstools/postcss-global-data': {
-      files: ['src/basics/breakpointTokens/breakpointTokens.css']
+      files: ['src/basics/styles/breakpointTokens.css']
     },
     'postcss-import-ext-glob': {},
     'postcss-import': {},

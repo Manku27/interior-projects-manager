@@ -1,0 +1,27 @@
+@layer basic {
+  img {
+    display: block;
+    height: auto;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-vertical-small);
+  }
+
+  figcaption {
+    display: block;
+    font-size: 1em;
+  }
+
+  @media (--large) {
+    figure {
+      gap: var(--spacing-vertical);
+    }
+
+    figcaption {
+      font-size: 1.25em;
+    }
+  }
+}

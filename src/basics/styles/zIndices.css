@@ -1,0 +1,14 @@
+/*
+  This file is for defining root-stacking context z-indicies.
+
+
+  Component level z-indicies that are in stacking contexts
+  other than the root should be defined in the component's CSS.
+*/
+
+:root {
+  --z-index-page-layout: -1;
+  --z-index-tooltip: 101;
+  --z-index-global-header: 500;
+  --z-index-primary-navigation-dialog: 700;
+}

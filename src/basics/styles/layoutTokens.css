@@ -1,0 +1,19 @@
+:root {
+  --width-gutter: 1.25rem;
+
+  --max-width-component: 107.5rem;
+
+  --spacing-horizontal-x-small: 0.375rem;
+  --spacing-horizontal-small: 0.75rem;
+  --spacing-horizontal-medium: 1.25rem;
+  --spacing-horizontal-large: 2rem;
+  --spacing-horizontal-x-large: 2.5rem;
+  --spacing-horizontal: var(--spacing-horizontal-medium);
+
+  --spacing-vertical-x-small: 0.75rem;
+  --spacing-vertical-small: 1.25rem;
+  --spacing-vertical-medium: 2rem;
+  --spacing-vertical-large: 6.25rem;
+  --spacing-vertical-x-large: 12.5rem;
+  --spacing-vertical: var(--spacing-vertical-medium);
+}

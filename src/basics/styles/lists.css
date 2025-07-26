@@ -1,0 +1,50 @@
+@layer basic {
+  ul,
+  ol {
+    --list-padding-inline-start: 1em;
+    --list-margin-block-end: var(--spacing-vertical-small);
+    --list-item-padding-inline-start: 1em;
+    --list-item-margin-block-end: var(--spacing-vertical-x-small);
+    --nested-list-margin-block: var(--spacing-vertical-x-small);
+
+    list-style: var(--list-style-type) outside;
+    padding-inline-start: var(--list-padding-inline-start);
+
+    &:where(:not(:last-child)) {
+      margin-block-end: var(--list-margin-block-end);
+    }
+
+    & ul,
+    & ol {
+      margin-block: var(--nested-list-margin-block);
+      list-style-type: var(--nested-list-style-type);
+    }
+
+    & li {
+      &:where(:not(:last-child)) {
+        margin-block-end: var(--list-item-margin-block-end);
+      }
+    }
+  }
+
+  ul {
+    --list-style-type: disc;
+    --nested-list-style-type: circle;
+  }
+
+  ol {
+    --list-style-type: decimal;
+    --nested-list-style-type: decimal;
+  }
+
+  .bareList {
+    --list-style-type: none;
+    --list-margin-block-end: 0;
+    --list-padding-inline-start: 0;
+    --list-item-margin-block-end: 0;
+    --list-item-padding-inline-start: 0;
+    --list-item-margin-block-end: 0;
+    --nested-list-style-type: none;
+    --nested-list-margin-block: 0;
+  }
+}

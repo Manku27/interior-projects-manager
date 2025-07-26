@@ -1,0 +1,58 @@
+@layer basic {
+  body {
+    color: var(--color-text);
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-base);
+  }
+
+  .bodyText1 {
+    font-size: var(--font-size-body-1);
+  }
+
+  .bodyText2 {
+    font-size: var(--font-size-body-2);
+  }
+
+  p {
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-base);
+
+    &:where(:not(:last-child)) {
+      margin-block-end: var(--spacing-vertical-small);
+    }
+  }
+
+  strong,
+  b {
+    font-weight: var(--font-weight-bold);
+  }
+
+  em,
+  i {
+    font-style: italic;
+  }
+
+  sup,
+  sub {
+    font-size: 0.75em;
+  }
+
+  sup {
+    vertical-align: super;
+  }
+
+  sub {
+    vertical-align: sub;
+  }
+
+  small,
+  .disclaimer {
+    font-size: var(--font-size-small);
+  }
+
+  .noBlockMargin {
+    margin-block: 0;
+  }
+}

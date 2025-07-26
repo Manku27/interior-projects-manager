@@ -1,0 +1,9 @@
+:root {
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: var(--color-sky);
+  --border: var(--border-width) var(--border-style) var(--border-color);
+
+  --border-radius-small: 0.25rem;
+  --border-radius: var(--border-radius-small);
+}

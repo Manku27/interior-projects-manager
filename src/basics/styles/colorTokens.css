@@ -1,0 +1,77 @@
+:root {
+  /* Primary Colors */
+  --color-slate-20: #24292f;
+  --color-slate-30: #253746;
+  --color-slate: var(--color-slate-30);
+  --color-dark-slate: var(--color-slate-20);
+
+  --color-deep-blue-30: #1b242f;
+  --color-deep-blue: var(--color-deep-blue-30);
+
+  --color-dark-sea-30: #455864;
+  --color-dark-sea: var(--color-dark-sea-30);
+
+  --color-sky-30: #5d7886;
+  --color-sky: var(--color-sky-30);
+
+  --color-linen-30: #d9d9d7;
+  --color-linen: var(--color-linen-30);
+
+  --color-sand-30: #f3efea;
+  --color-sand: var(--color-sand-30);
+
+  --color-white: #ffffff;
+  --color-snow: var(--color-white);
+
+  --color-gold-30: #cbab72;
+  --color-gold: var(--color-gold-30);
+
+  --color-coral-10: #ac000c;
+  --color-coral-20: #ba3640;
+  --color-coral-30: #f0626c;
+  --color-coral-40: #ff99a0;
+  --color-coral: var(--color-coral-30);
+  --color-coral-light: var(--color-coral-40);
+  --color-coral-dark: var(--color-coral-20);
+  --color-coral-x-dark: var(--color-coral-10);
+
+  /* Leaders Club Loyalty Segment Colors */
+  --color-powder-blue-30: #d2dce5;
+  --color-powder-blue: var(--color-powder-blue-30);
+
+  --color-peacock-30: #00aeb9;
+  --color-peacock: var(--color-peacock-30);
+
+  /* Sterling Loyalty Segment Colors */
+  --color-argent-30: #d9d9d9;
+  --color-argent: var(--color-argent-30);
+
+  --color-storm-30: #898d8d;
+  --color-storm-50: #c4c6c6;
+  --color-storm: var(--color-storm-30);
+
+  /* Aurelian Loyalty Segment Colors */
+  --color-champagne-30: #e0caa3;
+  --color-champagne: var(--color-champagne-30);
+
+  --color-suede-30: #dab573;
+  --color-suede: var(--color-suede-30);
+
+  --color-mettle-30: #967b50;
+  --color-mettle: var(--color-mettle-30);
+
+  /* Sustainability Colors */
+  --color-sustainability-green-20: #29845a;
+  --color-sustainability-green-30: #3aa574;
+
+  --color-sustainability-green: var(--color-sustainability-green-30);
+  --color-sustainability-green-dark: var(--color-sustainability-green-20);
+
+  /* Functional Colors */
+  --color-divider-line: var(--color-storm-50);
+
+  /* Color Aliases */
+  --color-text: var(--color-deep-blue);
+  --color-error: var(--color-coral-dark);
+  --color-error-dark-mode: var(--color-coral-light);
+}
