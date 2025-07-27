@@ -1,3 +1,4 @@
+import ExpensesList from '@/components/expense/ExpensesList/ExpensesList';
 import { ExpenseForm } from '@/components/expense/form';
 import ProjectExpense from '@/components/expense/projectExpenses/ProjectExpense';
 
@@ -9,6 +10,7 @@ export default function Page() {
       <div className="heading1">Your Expenses</div>
       <ExpenseForm />
       <ProjectExpense />
+      <ExpensesList />
     </main>
   );
 }
