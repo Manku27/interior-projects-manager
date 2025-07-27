@@ -19,3 +19,17 @@
    What has happened when
    Scheduled things
    My Hours for a day
+
+# Screens
+
+1. Home
+   Upcoming events
+   Quick expenses
+   Quick hours
+
+2. My expenses
+   Form to add expense - project, amount, media, date and time
+   Table for project based expense
+   Table to see past expenses in detail
+
+3.
