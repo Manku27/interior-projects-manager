@@ -37,7 +37,7 @@ export function HourLogger() {
               className={styles.input}
               type="text"
               name="item"
-              placeholder="Item name"
+              placeholder="Project name"
             />
           </label>
         </div>
