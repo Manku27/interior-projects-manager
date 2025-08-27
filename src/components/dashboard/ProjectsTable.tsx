@@ -46,12 +46,12 @@ export const ProjectsTable = () => {
                         <th>Project Name</th>
                         <th>Client Name</th>
                         <th>Status</th>
-                        <th>Total My Quote (₹)</th>
-                        <th>Total Expenses (₹)</th>
-                        <th>Incentive Receivable (₹)</th>
-                        <th>Received (₹)</th>
-                        <th>Profit (₹)</th>
-                        <th>Time Spent (Hrs)</th>
+                        <th className={styles.numeric}>Total My Quote (₹)</th>
+                        <th className={styles.numeric}>Total Expenses (₹)</th>
+                        <th className={styles.numeric}>Incentive Receivable (₹)</th>
+                        <th className={styles.numeric}>Received (₹)</th>
+                        <th className={styles.numeric}>Profit (₹)</th>
+                        <th className={styles.numeric}>Time Spent (Hrs)</th>
                         <th>Start Date</th>
                         <th>End Date</th>
                         <th>Actions</th>
@@ -71,12 +71,12 @@ export const ProjectsTable = () => {
                                 </a>
                             </td>
                             <td><StatusTag status={project.status} /></td>
-                            <td>{getProjectTotalMyQuote(project).toLocaleString('en-IN')}</td>
-                            <td>{getProjectTotalExpenses(project).toLocaleString('en-IN')}</td>
-                            <td>{getProjectIncentiveReceivable(project).toLocaleString('en-IN')}</td>
-                            <td>{getProjectTotalReceived(project).toLocaleString('en-IN')}</td>
-                            <td>{getProjectProfit(project).toLocaleString('en-IN')}</td>
-                            <td>{getProjectTimeSpent(project)}</td>
+                            <td className={styles.numeric}>{getProjectTotalMyQuote(project).toLocaleString('en-IN')}</td>
+                            <td className={styles.numeric}>{getProjectTotalExpenses(project).toLocaleString('en-IN')}</td>
+                            <td className={styles.numeric}>{getProjectIncentiveReceivable(project).toLocaleString('en-IN')}</td>
+                            <td className={styles.numeric}>{getProjectTotalReceived(project).toLocaleString('en-IN')}</td>
+                            <td className={styles.numeric}>{getProjectProfit(project).toLocaleString('en-IN')}</td>
+                            <td className={styles.numeric}>{getProjectTimeSpent(project)}</td>
                             <td>{project.startDate}</td>
                             <td>{project.endDate || 'N/A'}</td>
                             <td><ActionButtons project={project} /></td>

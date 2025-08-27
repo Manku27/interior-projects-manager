@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { getVendors } from '@/lib/data-helpers';
 import { ProposalStatus } from '@/data/types';
-import styles from '@/components/dashboard/addProjectForm.module.css'; // Reuse styles
+import styles from '@/components/common/form.module.css';
 
 export const AddProposalForm = ({ projectId }: { projectId: string }) => {
   const router = useRouter();

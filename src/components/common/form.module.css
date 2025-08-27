@@ -1,40 +1,55 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: var(--size-4, 1rem);
+  gap: var(--size-5, 1.5rem);
 }
 
 .formGroup {
   display: flex;
   flex-direction: column;
-  gap: var(--size-1, 0.25rem);
+  gap: var(--size-2, 0.5rem);
 }
 
 .formRow {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--size-4, 1rem);
+    grid-template-columns: 1fr;
+    gap: var(--size-5, 1.5rem);
+}
+
+@media (min-width: 768px) {
+    .formRow {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .formGroup label {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-gray-700, #374151);
 }
 
 .formGroup input,
-.formGroup select {
+.formGroup select,
+.formGroup textarea {
   width: 100%;
-  padding: var(--size-2, 0.5rem) var(--size-3, 0.75rem);
+  padding: var(--size-3, 0.75rem);
   border: 1px solid var(--color-gray-300, #d1d5db);
   border-radius: var(--radius-2, 8px);
-  background-color: var(--color-gray-50, #f9fafb);
+  background-color: var(--color-white, white);
+  font-size: var(--font-size-1, 0.875rem);
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .formGroup input:focus,
-.formGroup select:focus {
-  outline: 2px solid var(--color-blue-500, #3b82f6);
-  outline-offset: 1px;
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
   border-color: var(--color-blue-500, #3b82f6);
+  box-shadow: 0 0 0 3px var(--color-blue-100, #dbeafe);
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 120px;
 }
 
 .formActions {
@@ -43,15 +58,15 @@
   gap: var(--size-3, 0.75rem);
   margin-top: var(--size-4, 1rem);
   border-top: 1px solid var(--color-gray-200, #e5e7eb);
-  padding-top: var(--size-4, 1rem);
+  padding-top: var(--size-5, 1.5rem);
 }
 
 .formActions button {
-    padding: var(--size-2, 0.5rem) var(--size-4, 1rem);
+    padding: var(--size-3, 0.75rem) var(--size-5, 1.5rem);
     border-radius: var(--radius-2, 8px);
     border: none;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .cancelButton {

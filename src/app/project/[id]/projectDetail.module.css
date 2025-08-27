@@ -1,17 +1,18 @@
 .container {
-    padding: var(--size-fluid-4);
+    padding: var(--size-fluid-5);
     background-color: var(--color-sand);
     min-height: 100vh;
 }
 
 .header {
-    padding: var(--size-4, 1rem);
+    padding: var(--size-5, 1.5rem);
     background-color: var(--color-white, white);
-    border-radius: var(--radius-2, 8px);
-    margin-bottom: var(--size-fluid-4);
+    border-radius: var(--radius-3, 12px);
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+    margin-bottom: var(--size-fluid-5);
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     gap: var(--size-4);
 }
@@ -24,7 +25,7 @@
 
 .meta {
     font-size: var(--font-size-1, 0.875rem);
-    color: var(--color-gray-700, #374151);
+    color: var(--color-gray-600, #4b5563);
     text-align: right;
 }
 
@@ -32,8 +33,14 @@
     margin: 0;
 }
 
+.meta strong {
+    color: var(--color-gray-800, #1f2937);
+    font-weight: 600;
+}
+
 .tabContainer {
     background-color: var(--color-white, white);
-    border-radius: var(--radius-2, 8px);
-    padding: 0 var(--size-fluid-4);
+    border-radius: var(--radius-3, 12px);
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+    padding: 0 var(--size-fluid-5);
 }

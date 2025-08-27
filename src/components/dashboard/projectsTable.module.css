@@ -1,28 +1,30 @@
 .tableContainer {
   background-color: var(--color-white, white);
-  border-radius: var(--radius-2, 8px);
-  padding: var(--size-4, 1rem);
-  box-shadow: var(--shadow-2, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1));
+  border-radius: var(--radius-3, 12px);
+  border: 1px solid var(--color-gray-200, #e5e7eb);
   overflow-x: auto; /* For responsiveness on small screens */
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
-  font-size: var(--font-size-1, 0.875rem);
 }
 
 .table th,
 .table td {
-  padding: var(--size-3, 0.75rem) var(--size-4, 1rem);
+  padding: var(--size-4, 1rem) var(--size-5, 1.5rem);
   text-align: left;
   border-bottom: 1px solid var(--color-gray-200, #e5e7eb);
+  white-space: nowrap;
 }
 
 .table thead th {
+  font-size: var(--font-size-1, 0.875rem);
   font-weight: 600;
-  color: var(--color-gray-600, #4b5563);
-  background-color: var(--color-gray-50, #f9fafb);
+  color: var(--color-gray-700, #374151);
+  background-color: var(--color-gray-100, #f3f4f6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .table tbody tr:hover {
@@ -75,13 +77,20 @@
     gap: var(--size-2, 0.5rem);
 }
 
+.numeric {
+    text-align: right;
+}
+
 .actionButtons button {
     background: none;
     border: 1px solid var(--color-gray-300, #d1d5db);
-    border-radius: var(--radius-1, 4px);
-    padding: var(--size-1, 0.25rem) var(--size-2, 0.5rem);
+    border-radius: var(--radius-2, 8px);
+    padding: var(--size-2, 0.5rem) var(--size-3, 0.75rem);
     cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
 }
 .actionButtons button:hover {
     background-color: var(--color-gray-100, #f3f4f6);
+    border-color: var(--color-gray-400, #9ca3af);
 }

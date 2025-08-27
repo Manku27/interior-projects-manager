@@ -1,10 +1,8 @@
 "use client";
 
-"use client";
-
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import styles from './addProjectForm.module.css';
+import styles from '@/components/common/form.module.css';
 import { ProjectStatus } from '@/data/types';
 
 export const AddProjectForm = () => {

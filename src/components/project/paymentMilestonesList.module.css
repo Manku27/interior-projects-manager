@@ -1,11 +1,11 @@
 .list {
     display: grid;
-    gap: var(--size-4, 1rem);
+    gap: var(--size-5, 1.5rem);
 }
 
 .card {
     background-color: var(--color-white, white);
-    border-radius: var(--radius-2, 8px);
+    border-radius: var(--radius-3, 12px);
     border: 1px solid var(--color-gray-200, #e5e7eb);
     overflow: hidden;
 }
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--size-3, 0.75rem) var(--size-4, 1rem);
+    padding: var(--size-4, 1rem) var(--size-5, 1.5rem);
     background-color: var(--color-gray-50, #f9fafb);
     border-bottom: 1px solid var(--color-gray-200, #e5e7eb);
 }
@@ -28,8 +28,8 @@
 .cardBody {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: var(--size-4, 1rem);
-    padding: var(--size-4, 1rem);
+    gap: var(--size-5, 1.5rem);
+    padding: var(--size-5, 1.5rem);
 }
 
 .infoItem {
@@ -64,14 +64,18 @@
     background-color: var(--color-blue-600, #2563eb);
     color: white;
     border: none;
-    padding: var(--size-1, 0.25rem) var(--size-3, 0.75rem);
-    border-radius: var(--radius-1, 4px);
+    padding: var(--size-2, 0.5rem) var(--size-3, 0.75rem);
+    border-radius: var(--radius-2, 8px);
     cursor: pointer;
+    font-weight: 500;
 }
 .cardActions .secondaryButton {
     background-color: transparent;
     color: var(--color-gray-700, #374151);
     border: 1px solid var(--color-gray-300, #d1d5db);
+}
+.cardActions button:hover {
+    opacity: 0.9;
 }
 
 

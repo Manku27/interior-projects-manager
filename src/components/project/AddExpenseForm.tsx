@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ExpenseCategory } from '@/data/types';
-import styles from '@/components/dashboard/addProjectForm.module.css'; // Reuse styles
+import styles from '@/components/common/form.module.css';
 
 export const AddExpenseForm = ({ projectId }: { projectId: string }) => {
   const router = useRouter();
