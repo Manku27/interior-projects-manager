@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 
 import { geistSans, monsterrat } from '@/basics/fonts';
 import '@/basics/global.css';
+import { Header } from '@/components/common/Header';
 
 export const metadata: Metadata = {
   title: 'Interior Projects Manager',
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={classNames(monsterrat.variable, geistSans.variable)}>
+        <Header />
         {children}
       </body>
     </html>

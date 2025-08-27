@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--size-4, 1rem);
+}
+
+.addButton {
+    background-color: var(--color-blue-600, #2563eb);
+    color: var(--color-white, white);
+    border: none;
+    border-radius: var(--radius-2, 8px);
+    padding: var(--size-2, 0.5rem) var(--size-4, 1rem);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.addButton:hover {
+    background-color: var(--color-blue-700, #1d4ed8);
+}

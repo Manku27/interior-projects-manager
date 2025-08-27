@@ -1,0 +1,50 @@
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-1, 0.875rem);
+  background-color: var(--color-white, white);
+  border-radius: var(--radius-2, 8px);
+  overflow: hidden; /* To make border-radius work on table */
+}
+
+.table th,
+.table td {
+  padding: var(--size-3, 0.75rem) var(--size-4, 1rem);
+  text-align: left;
+  border-bottom: 1px solid var(--color-gray-200, #e5e7eb);
+}
+
+.table thead th {
+  font-weight: 600;
+  color: var(--color-gray-600, #4b5563);
+  background-color: var(--color-gray-50, #f9fafb);
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+  background-color: var(--color-gray-50, #f9fafb);
+}
+
+.actionButtons {
+    display: flex;
+    gap: var(--size-2, 0.5rem);
+}
+
+.actionButtons button {
+    background: none;
+    border: 1px solid var(--color-gray-300, #d1d5db);
+    border-radius: var(--radius-1, 4px);
+    padding: var(--size-1, 0.25rem) var(--size-2, 0.5rem);
+    cursor: pointer;
+    font-size: var(--font-size-0, 0.75rem);
+}
+.actionButtons button:hover {
+    background-color: var(--color-gray-100, #f3f4f6);
+}

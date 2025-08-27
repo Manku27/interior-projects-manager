@@ -1,0 +1,51 @@
+.feed {
+    display: grid;
+    gap: var(--size-4, 1rem);
+}
+
+.card {
+    background-color: var(--color-white, white);
+    border-radius: var(--radius-2, 8px);
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-2, 0.5rem) var(--size-4, 1rem);
+    background-color: var(--color-gray-50, #f9fafb);
+    border-bottom: 1px solid var(--color-gray-200, #e5e7eb);
+}
+
+.date {
+    font-weight: 600;
+    color: var(--color-gray-800, #1f2937);
+}
+
+.time {
+    font-weight: 500;
+    color: var(--color-blue-600, #2563eb);
+    background-color: var(--color-blue-100, #dbeafe);
+    padding: var(--size-1, 0.25rem) var(--size-2, 0.5rem);
+    border-radius: var(--radius-full, 9999px);
+    font-size: var(--font-size-0, 0.75rem);
+}
+
+.cardBody {
+    padding: var(--size-4, 1rem);
+    display: grid;
+    gap: var(--size-4, 1rem);
+}
+
+.cardBody h4 {
+    font-size: var(--font-size-0, 0.75rem);
+    text-transform: uppercase;
+    color: var(--color-gray-500, #6b7280);
+    margin: 0 0 var(--size-1, 0.25rem) 0;
+}
+
+.cardBody p {
+    margin: 0;
+    white-space: pre-wrap; /* To respect newlines in the text area */
+}

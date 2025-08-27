@@ -1,0 +1,14 @@
+.container {
+    padding: var(--size-fluid-4);
+    background-color: var(--color-sand);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-fluid-4);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

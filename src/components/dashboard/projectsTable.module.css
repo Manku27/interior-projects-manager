@@ -1,0 +1,87 @@
+.tableContainer {
+  background-color: var(--color-white, white);
+  border-radius: var(--radius-2, 8px);
+  padding: var(--size-4, 1rem);
+  box-shadow: var(--shadow-2, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1));
+  overflow-x: auto; /* For responsiveness on small screens */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-1, 0.875rem);
+}
+
+.table th,
+.table td {
+  padding: var(--size-3, 0.75rem) var(--size-4, 1rem);
+  text-align: left;
+  border-bottom: 1px solid var(--color-gray-200, #e5e7eb);
+}
+
+.table thead th {
+  font-weight: 600;
+  color: var(--color-gray-600, #4b5563);
+  background-color: var(--color-gray-50, #f9fafb);
+}
+
+.table tbody tr:hover {
+  background-color: var(--color-gray-50, #f9fafb);
+}
+
+.table td a {
+    color: var(--color-blue-600, #2563eb);
+    text-decoration: none;
+    font-weight: 500;
+}
+.table td a:hover {
+    text-decoration: underline;
+}
+
+
+/* Status Tag Styles */
+.status {
+  padding: var(--size-1, 0.25rem) var(--size-2, 0.5rem);
+  border-radius: var(--radius-full, 9999px);
+  font-weight: 600;
+  font-size: var(--font-size-0, 0.75rem);
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.ongoing {
+  background-color: var(--color-blue-100, #dbeafe);
+  color: var(--color-blue-800, #1e40af);
+}
+
+.completed {
+  background-color: var(--color-green-100, #dcfce7);
+  color: var(--color-green-800, #166534);
+}
+
+.onhold {
+  background-color: var(--color-yellow-100, #fef9c3);
+  color: var(--color-yellow-800, #854d0e);
+}
+
+.cancelled {
+    background-color: var(--color-red-100, #fee2e2);
+    color: var(--color-red-800, #991b1b);
+}
+
+/* Action Buttons */
+.actionButtons {
+    display: flex;
+    gap: var(--size-2, 0.5rem);
+}
+
+.actionButtons button {
+    background: none;
+    border: 1px solid var(--color-gray-300, #d1d5db);
+    border-radius: var(--radius-1, 4px);
+    padding: var(--size-1, 0.25rem) var(--size-2, 0.5rem);
+    cursor: pointer;
+}
+.actionButtons button:hover {
+    background-color: var(--color-gray-100, #f3f4f6);
+}

@@ -1,16 +1,20 @@
-import { HomeEventList } from '@/components/home/events';
-import { ExpenseLogger } from '@/components/home/expense';
-import { HourLogger } from '@/components/home/hourLogger';
-
+import { KpiCards } from '@/components/dashboard/KpiCards';
+import { ProjectsTable } from '@/components/dashboard/ProjectsTable';
+import Link from 'next/link';
 import styles from './page.module.css';
+import buttonStyles from '@/components/common/button.module.css';
 
-export default function Home() {
+export default function DashboardPage() {
   return (
     <main className={styles.container}>
-      <div className="heading1">Hey, Boss!</div>
-      <HomeEventList />
-      <ExpenseLogger />
-      <HourLogger />
+      <div className={styles.header}>
+        <h1 className="heading1">Dashboard</h1>
+        <Link href="/project/new" className={buttonStyles.addButton}>
+            + Add New Project
+        </Link>
+      </div>
+      <KpiCards />
+      <ProjectsTable />
     </main>
   );
 }

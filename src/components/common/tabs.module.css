@@ -1,0 +1,31 @@
+.tabList {
+  display: flex;
+  border-bottom: 2px solid var(--color-gray-200, #e5e7eb);
+}
+
+.tab {
+  padding: var(--size-3, 0.75rem) var(--size-4, 1rem);
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: var(--font-size-1, 0.875rem);
+  font-weight: 500;
+  color: var(--color-gray-500, #6b7280);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px; /* To align with the container's border */
+  transition: all 0.2s ease-in-out;
+}
+
+.tab:hover {
+  color: var(--color-gray-800, #1f2937);
+}
+
+.tab.active {
+  color: var(--color-blue-600, #2563eb);
+  border-color: var(--color-blue-600, #2563eb);
+  font-weight: 600;
+}
+
+.tabPanel {
+  padding: var(--size-fluid-4) 0; /* Add padding only vertically */
+}

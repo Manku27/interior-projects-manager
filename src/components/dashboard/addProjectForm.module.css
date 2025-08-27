@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4, 1rem);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-1, 0.25rem);
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--size-4, 1rem);
+}
+
+.formGroup label {
+  font-weight: 500;
+  color: var(--color-gray-700, #374151);
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: var(--size-2, 0.5rem) var(--size-3, 0.75rem);
+  border: 1px solid var(--color-gray-300, #d1d5db);
+  border-radius: var(--radius-2, 8px);
+  background-color: var(--color-gray-50, #f9fafb);
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: 2px solid var(--color-blue-500, #3b82f6);
+  outline-offset: 1px;
+  border-color: var(--color-blue-500, #3b82f6);
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--size-3, 0.75rem);
+  margin-top: var(--size-4, 1rem);
+  border-top: 1px solid var(--color-gray-200, #e5e7eb);
+  padding-top: var(--size-4, 1rem);
+}
+
+.formActions button {
+    padding: var(--size-2, 0.5rem) var(--size-4, 1rem);
+    border-radius: var(--radius-2, 8px);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.cancelButton {
+    background-color: var(--color-white, white);
+    color: var(--color-gray-700, #374151);
+    border: 1px solid var(--color-gray-300, #d1d5db);
+}
+.cancelButton:hover {
+    background-color: var(--color-gray-50, #f9fafb);
+}
+
+.submitButton {
+    background-color: var(--color-blue-600, #2563eb);
+    color: var(--color-white, white);
+}
+.submitButton:hover {
+    background-color: var(--color-blue-700, #1d4ed8);
+}

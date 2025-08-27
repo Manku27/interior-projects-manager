@@ -1,0 +1,30 @@
+.container {
+    padding: var(--size-fluid-4);
+    background-color: var(--color-sand);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 700px;
+    margin-top: var(--size-fluid-5);
+}
+
+.formContainer h1 {
+    text-align: center;
+}
+.formContainer p {
+    text-align: center;
+    color: var(--color-gray-600);
+    margin-bottom: var(--size-fluid-4);
+}
+
+.formWrapper {
+    background-color: var(--color-white, white);
+    padding: var(--size-fluid-5);
+    border-radius: var(--radius-3, 12px);
+    box-shadow: var(--shadow-3);
+}

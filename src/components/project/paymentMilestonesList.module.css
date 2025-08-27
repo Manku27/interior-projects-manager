@@ -1,0 +1,100 @@
+.list {
+    display: grid;
+    gap: var(--size-4, 1rem);
+}
+
+.card {
+    background-color: var(--color-white, white);
+    border-radius: var(--radius-2, 8px);
+    border: 1px solid var(--color-gray-200, #e5e7eb);
+    overflow: hidden;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-3, 0.75rem) var(--size-4, 1rem);
+    background-color: var(--color-gray-50, #f9fafb);
+    border-bottom: 1px solid var(--color-gray-200, #e5e7eb);
+}
+
+.milestoneName {
+    margin: 0;
+    font-size: var(--font-size-2, 1.125rem);
+    font-weight: 600;
+}
+
+.cardBody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--size-4, 1rem);
+    padding: var(--size-4, 1rem);
+}
+
+.infoItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoItem span {
+    font-size: var(--font-size-0, 0.75rem);
+    color: var(--color-gray-500, #6b7280);
+    margin-bottom: var(--size-1, 0.25rem);
+}
+
+.infoItem strong {
+    font-size: var(--font-size-1, 0.875rem);
+    font-weight: 600;
+}
+
+.balance strong {
+    color: var(--color-red-600, #dc2626);
+}
+
+.cardActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--size-2, 0.5rem);
+    padding: var(--size-3, 0.75rem) var(--size-4, 1rem);
+    border-top: 1px solid var(--color-gray-200, #e5e7eb);
+}
+
+.cardActions button {
+    background-color: var(--color-blue-600, #2563eb);
+    color: white;
+    border: none;
+    padding: var(--size-1, 0.25rem) var(--size-3, 0.75rem);
+    border-radius: var(--radius-1, 4px);
+    cursor: pointer;
+}
+.cardActions .secondaryButton {
+    background-color: transparent;
+    color: var(--color-gray-700, #374151);
+    border: 1px solid var(--color-gray-300, #d1d5db);
+}
+
+
+/* Status Tag Styles */
+.statusTag {
+  padding: var(--size-1, 0.25rem) var(--size-2, 0.5rem);
+  border-radius: var(--radius-full, 9999px);
+  font-weight: 600;
+  font-size: var(--font-size-0, 0.75rem);
+}
+.paid {
+  background-color: var(--color-green-100, #dcfce7);
+  color: var(--color-green-800, #166534);
+}
+.upcoming {
+  background-color: var(--color-blue-100, #dbeafe);
+  color: var(--color-blue-800, #1e40af);
+}
+.due {
+  background-color: var(--color-yellow-100, #fef9c3);
+  color: var(--color-yellow-800, #854d0e);
+}
+.overdue {
+    background-color: var(--color-red-100, #fee2e2);
+    color: var(--color-red-800, #991b1b);
+}
